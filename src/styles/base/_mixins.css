@@ -1,0 +1,25 @@
+/**
+  Font Vertical Rhythm
+  Establece y ajusta el tamaño de tipografía en rem para encajar en el grid
+  @param {number} $fontsize
+  @param {number} $lineheight
+  @param {number} $marginbottom
+  @param {number} $margintop
+  @param {number} $capheight
+*/
+@define-mixin fnt $fontsize, $lineheight, $capheight {
+  position: relative;
+  top: calc(-$capheight * $fontsize - (0.5 * ($lineheight - 4)))rem;
+  font-size: calc($fontsize)rem;
+  line-height: calc($lineheight)rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@define-mixin debugGrid $fontsize:16px, $color:rgba(255,0,255, 0.2), $gridMultScale:1 {
+$gridSpace: calc($fontsize * $gridMultScale);
+  background: linear-gradient(180deg, $color 1px, transparent 0, transparent $gridSpace), linear-gradient(90deg, transparent 0, transparent 6px, $color 0, $color 7px, transparent 0, transparent $gridSpace);
+  background-repeat: repeat;
+  background-position: top;
+  background-size: $gridSpace $gridSpace;
+}

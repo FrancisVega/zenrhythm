@@ -1,0 +1,39 @@
+{
+  "name": "Secuoyas-Gulp-Postcss-Template",
+  "version": "1.0.0",
+  "description": "Secuoyas Gulp-Postcss template",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Francis Vega",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.8.2",
+    "clipboard": "^1.5.9",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-postcss": "^6.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "gulp-w3c-css": "^0.1.2",
+    "gulp-w3cjs": "^1.2.0",
+    "lost": "^6.7.2",
+    "postcss-calc": "^5.2.0",
+    "postcss-hexrgba": "^0.2.0",
+    "postcss-scss": "^0.1.5",
+    "postcss-short": "^1.4.0",
+    "precss": "^1.4.0",
+    "run-sequence": "^1.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

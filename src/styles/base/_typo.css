@@ -1,0 +1,64 @@
+$root__fontsize: 16px;
+
+$u: 0.5rem;
+
+$CAP: 0.333333;
+
+body { margin:0; padding:0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+html { 
+
+  @mixin debugGrid $root__fontsize, rgba(#2f0f66, 0.2), 0.5;
+font-size: $root__fontsize; }
+
+.row {
+  margin-top: 10rem;
+  lost-center: 40rem;
+  margin-bottom: calc($u * 4);
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ *.h1 { @mixin fnt 2.00, 3.00, $CAP; margin-bottom: 2rem; background-color: rgba(#666, 0.2); }
+ *.h2 { @mixin fnt 2.50, 3.00, $CAP; margin-bottom: 2rem; background-color: rgba(#666, 0.5);}
+ *.h3 { @mixin fnt 2.00, 2.50, $CAP; margin-bottom: 2rem; background-color: rgba(#666, 0.2);}
+ *.h4 { @mixin fnt 1.50, 2.00, $CAP; margin-bottom: 2rem; background-color: rgba(#666, 0.5);}
+ *.h5 { @mixin fnt 1.25, 3.00, $CAP; margin-bottom: 2rem; background-color: rgba(#666, 0.2);}
+ *.h6 { @mixin fnt 1.00, 1.50, $CAP; margin-bottom: 2rem; background-color: rgba(#666, 0.5);}
+ */
+
+h1 {
+  @mixin fnt 2, 2.5, $CAP;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  @mixin fnt 1.75, 3, $CAP;
+  font-weight: 600;
+}
+
+h3 {
+  @mixin fnt 1.5, 2.5, $CAP;
+  font-weight: 600;
+}
+
+.caption {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @mixin fnt 0.875, 2, $CAP;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+ul, ol, p {
+  font-family: "serif";
+  @mixin fnt 1.125, 1.75, $CAP;
+  color: #666;
+  margin-bottom: 2rem;
+  padding-left: 0;
+}
+

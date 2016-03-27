@@ -1,0 +1,19 @@
+.row {
+  /*
+   *lost-center: 960px;
+   */
+  height: 100%;
+}
+
+.member {
+  background: url("http://secuoyas.com/img/equipo/francisVega.jpg") center center no-repeat #232323;
+  background-size: cover;
+  lost-row: 1/2;
+  border: 1px solid black;
+}
+
+.member__rrss-list {
+  @mixin resetList;
+}
+
+
